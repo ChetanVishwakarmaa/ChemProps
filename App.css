@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff; 
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color:rgb(24, 78, 135); 
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin-top: 0;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.app-header .tagline {
+  font-size: 1.1em;
+  color: #e0f2f7; /* Light blue text for tagline */
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  flex-grow: 1; /* Allow main to take up remaining vertical space */
+}
+
+.input-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 1em;
+}
+
+.form-group input[type='number'] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type='number']:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.predict-button {
+  background-color: #28a745; /* Green button */
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.predict-button:hover {
+  background-color: #1e7e34;
+}
+
+.predict-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545; /* Red error text */
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.output-container {
+  background-color: #e6f7ff; /* Very light blue for output */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: left;
+}
+
+.output-title {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.property-item {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 1em;
+}
+
+.property-item strong {
+  font-weight: bold;
+  color: #333;
+  margin-right: 5px;
+}
+
+.app-footer {
+  background-color: #343a40; /* Dark grey footer */
+  color: #f8f9fa; /* Light text for footer */
+  text-align: center;
+  padding: 15px 30px;
+  margin-top: 30px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
